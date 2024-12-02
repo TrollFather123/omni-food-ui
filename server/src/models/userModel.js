@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema({
     {
       name: String,
       description: String,
-      images: [],
+      images: [String],
     },
   ],
   addresses: [
