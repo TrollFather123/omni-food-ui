@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const resturantSchema = new mongoose.Schema({
+const ResturantSchema = new mongoose.Schema({
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     required: "User",
@@ -35,6 +35,6 @@ const resturantSchema = new mongoose.Schema({
   ]
 });
 
-const Resturant = mongoose.model("Resturant", resturantSchema);
+const Resturant = mongoose.model("Resturant", ResturantSchema);
 
 module.exports = Resturant;
